@@ -1,0 +1,15 @@
+main:main.o sum.o subtract.o devide.o multiply.o
+	gcc main.o sum.o subtract.o devide.o multiply.o -o main
+main.o:main.c
+	gcc -c main.c
+sum.o:sum.c
+	gcc -c sum.c
+multiply.o:multiply.c
+	gcc -c multiply.c
+devide.o:devide.c
+	gcc -c devide.c
+subtract.o:subtract.c
+	gcc -c subtract.c
+
+clean:
+	rm main *.o
